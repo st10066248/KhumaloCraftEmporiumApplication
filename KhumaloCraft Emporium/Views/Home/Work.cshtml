@@ -1,0 +1,95 @@
+﻿
+@{
+    ViewData["Title"] = "My Work";
+}
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1>Products</h1>
+    <br />
+    <link rel="stylesheet" href="~/css/site.css">
+    
+</head>
+<style>
+  
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px; 
+}
+
+.product {
+    text-align: center;
+    width: 30%; 
+    height: auto; 
+    border: 1px solid #e0e0e0; 
+    padding: 20px; 
+    border-radius: 8px; 
+    transition: transform 0.3s ease; 
+}
+
+.product img {
+    width: 100%;
+    max-height: 200px; 
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product p {
+    margin-top: 10px;
+    font-size: 18px; 
+    color: #333; 
+}
+
+.product button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    width: 100%; 
+}
+
+.product button:hover {
+    background-color: #45a049;
+    transition: background-color 0.3s ease; 
+}
+
+}
+
+
+
+</style>
+<body>
+    <div class="product-container">
+        <div class="product">
+            <img src="~/images/image1.jpeg" alt="work">
+            <p>High-quality wooden orament for various tasks.</p>
+            <p>R590</p>
+            <button>Purchase</button>
+        </div>
+
+        <div class="product">
+            <img src="~/images/image2.jpg" alt="work">
+            <p>Versatile hand crafted light holders.</p>
+            <p>R360</p>
+            <button>Purchase</button>
+        </div>
+
+        <div class="product">
+            <img src="~/images/image3.jpg" alt="work">
+            <p>Durable wall art made with hand crafted clay tiles.</p>
+            <p>R600</p>
+            <button>Purchase</button>
+        </div>
+    </div>
+</body>
+
